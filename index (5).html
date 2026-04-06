@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adventist Clubs - MWANZA MISHECK</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Splash Screen -->
+<div id="splash" class="splash-screen">
+<h1>JUNIOR ADVENTIST AMOR</h1>
+<h6>(MWANZA MISHECK)</h6>
+</div>
+
+<!-- WhatsApp Message -->
+<div id="whatsappMessage" class="whatsapp-message" style="display:none;">
+<a href="https://wa.me/260765416606" target="_blank">
+Contact via WhatsApp
+</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="mainContent" class="main-content" style="display:none;">
+
+<!-- Menu -->
+<div id="menuDots" class="menu" onclick="toggleMenu()">
+<div class="dots">
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div id="menuOptions" class="menu-options" style="display:none;">
+<ul>
+<li><a href="javascript:void(0);" onclick="showWhatsAppLink()">WhatsApp</a></li>
+<li><a href="#">Share</a></li>
+</ul>
+</div>
+
+<!-- MAIN MENU GRID -->
+<div id="mainGrids" class="grid-container">
+
+<div class="grid-item" onclick="showContent('adv')">
+<img src="images/adventurer.jpg" alt="Adventurer">
+<span>Adventurer</span>
+</div>
+
+<div class="grid-item" onclick="showContent('pf')">
+<img src="images/pathfinder.jpg" alt="Pathfinder">
+<span>Pathfinder</span>
+</div>
+
+
+  <div class="grid-item" onclick="showContent('MGContainer')">
+<img src="images/masterguide.jpg" alt="Master Guide">
+<span>Master Guide</span>
+</div>
+
+</div>
+
+
+
+<div id="pf" class="content-section" style="display:none;">
+
+<h2>Pathfinder Section</h2>
+
+<div class="pf-grid">
+
+<div  class="pf-item" onclick="openPledge()">Pledge</div>
+
+<div class="pf-item" onclick="openHancock()">History Hancock</div>
+
+<div class="pf-item" onclick="openSummary()">History Summary</div>
+
+<div class="pf-item" onclick="openLaw()">Law</div>
+
+<div class="pf-item" onclick="openSong()">Song</div>
+<div class="grid-item" onclick="showContent('honorsSection')">HONORS</div>
+
+</div>
+
+<button onclick="goBack()" class="back-btn">Back</button>
+
+</div>
+<div id="pfPopup" class="popup">
+<div class="popup-box">
+
+<h3>Pathfinder Document</h3>
+
+<a id="pfView" target="_blank">
+<button>View Online</button>
+</a>
+
+<a id="pfDownload">
+<button>Download</button>
+</a>
+
+<button onclick="closePfPopup()">Cancel</button>
+
+</div>
+</div>
+
+
+
+
+
+<div id="honorsSection" class="content-section honors-page">
+
+  <h2>Pathfinder Honors</h2>
+
+  <div id="honorsContainer"></div>
+
+  <button onclick="showContent('pf')" class="honors-back">Back</button>
+
+</div>
+
+<!-- ADVENTURER SECTION -->
+<div id="adv" class="content-section" style="display:none;">
+
+<h2>Adventurer Section</h2>
+
+<div class="adv-core" onclick="openCoreOptions()">ADVENTURER CORE</div>
+
+<div class="adv-skills" onclick="openSkillsOptions()">ADVENTURER SKILLS</div>
+
+<div class="adv-manual" onclick="openManualOptions()">ADVENTURER MANUAL</div>
+
+<button onclick="goBack()" class="back-btn">Back</button>
+
+</div>
+
+
+
+
+
+<!-- ADVENTURER POPUPS -->
+
+<div id="corePopup" class="popup">
+<div class="popup-box">
+<h3>Adventurer Core</h3>
+<a href="pdf/adventurer/core.pdf" target="_blank"><button>View Online</button></a>
+<a href="pdf/adventurer/core.pdf" download><button>Download</button></a>
+<button onclick="closeCoreOptions()">Cancel</button>
+</div>
+</div>
+
+<div id="skillsPopup" class="popup">
+<div class="popup-box">
+<h3>Adventurer Skills</h3>
+<a href="pdf/adventurer/skills.pdf" target="_blank"><button>View Online</button></a>
+<a href="pdf/adventurer/skills.pdf" download><button>Download</button></a>
+<button onclick="closeSkillsOptions()">Cancel</button>
+</div>
+</div>
+
+<div id="manualPopup" class="popup">
+<div class="popup-box">
+<h3>Adventurer Manual</h3>
+<a href="pdf/adventurer/manual.pdf" target="_blank"><button>View Online</button></a>
+<a href="pdf/adventurer/manual.pdf" download><button>Download</button></a>
+<button onclick="closeManualOptions()">Cancel</button>
+</div>
+</div>
+
+
+
+
+<div id="MGContainer" class="content-section" style="display:none;">
+
+  <h2>Master Guide</h2>
+
+  <div id="mgGrid"></div>
+
+  <button onclick="goBack()" class="back-btn">Back</button>
+
+</div>
+
+<!-- Motto -->
+<p class="motto">
+For the love of Christ compels us.
+</p>
+
+
+
+© 2026 Misheck mwanza. All rights reserved.
+This code may be used for viewing or learning purposes only.
+No copying, modification, or redistribution allowed.
+<script src="main.js"></script>
+
+</body>
+</html>
