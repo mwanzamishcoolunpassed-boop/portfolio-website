@@ -1,52 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>MWANZA MISHECK | Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Consolas, monospace;
-            background-color: #0f0f0f;
-            color: #00ff99;
-        }
-
-        header {
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        h1 {
-            font-size: 40px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #ccc;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            border: 1px solid #00ff99;
-            color: #00ff99;
-            text-decoration: none;
-        }
-
-        .btn:hover {
-            background-color: #00ff99;
-            color: #000;
-        }
-    </style>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>> MWANZA MISHECK_</h1>
-    <p>Full-Stack Developer in Progress</p>
-    <a href="#" class="btn">View My Work</a>
-</header>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+
+    <div class="buttons">
+      <button onclick="calc.add('7')">7</button>
+      <button onclick="calc.add('8')">8</button>
+      <button onclick="calc.add('9')">9</button>
+      <button onclick="calc.add('/')">÷</button>
+
+      <button onclick="calc.add('4')">4</button>
+      <button onclick="calc.add('5')">5</button>
+      <button onclick="calc.add('6')">6</button>
+      <button onclick="calc.add('*')">×</button>
+
+      <button onclick="calc.add('1')">1</button>
+      <button onclick="calc.add('2')">2</button>
+      <button onclick="calc.add('3')">3</button>
+      <button onclick="calc.add('-')">−</button>
+
+
+      <button onclick="calc.add('.')">.</button>
+            <button onclick="calc.add('0')">0</button>
+      <button onclick="calc.calculate()">=</button>
+      <button onclick="calc.add('+')">+</button>
+
+      <!-- Scientific -->
+      <button class="trig" onclick="calc.sin()">sin</button>
+      <button class="trig" onclick="calc.cos()">cos</button>
+      <button class="trig" onclick="calc.tan()">tan</button>
+      <button onclick="calc.sqrt()">√</button>
+
+      <button onclick="calc.square()">x²</button>
+      <button onclick="calc.log()">log</button>
+      <button onclick="calc.pi()">π</button>
+     
+      
+      
+      <button onclick="calc.add('**')">^</button>
+      <button onclick="calc.add('(')">(</button>
+<button onclick="calc.add(')')">)</button>
+
+
+ <button onclick="calc.clear()" id="sniper">C</button>
+    </div>
+  </div>
+
+
+  
+  
+  
+
+    <button id="toggleHistory">📜 History</button>
+    <ul id="history" class="hidden"></ul>
+
+    
+        <button id="clearHistory">clear history</button>
+  
+    <button onclick="toggleMode()">🌙 / ☀️</button>
+  
+
+
+    <script src="main.js"></script>
 
 </body>
-  </html>
+</html>
